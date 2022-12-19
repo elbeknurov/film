@@ -20,8 +20,8 @@ function getFunction(query) {
     const type = constTemplate.querySelector(".series");
 
     img.src = film.Poster;
-    title.textContent = film.title;
-    year.textContent = film.year;
+    title.textContent = film.Title;
+    year.textContent = film.Year;
     type.textContent = film.Type;
     fragment.appendChild(constTemplate);
   });
