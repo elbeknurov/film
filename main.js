@@ -1,8 +1,9 @@
 const template = document.querySelector("#template");
 const elDiv = document.querySelector(".card");
+const elSearch = document.querySelector(".search");
 
 let film = [];
-fetch(`https://www.omdbapi.com/?s=avengers&plot=full&apikey=e2f9a30`)
+fetch(`https://www.omdbapi.com/?s=spider&plot=full&apikey=e2f9a30`)
   .then((res) => res.json())
   .then((data) => {
     film = data.Search;
@@ -27,3 +28,13 @@ function getFunction(query) {
   });
   elDiv.appendChild(fragment);
 }
+
+// elSearch.addEventListener("input", () => {
+//   const value = elSearch.value;
+//   const filteredData = data.filter((film) => {
+//     if (title.toLowerCase().match(value.toLowerCase())) {
+//       return film;
+//     }
+//   });
+//   render(filteredData);
+// });

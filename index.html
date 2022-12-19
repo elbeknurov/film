@@ -44,7 +44,7 @@
         <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
           <input
             type="search"
-            class="form-control form-control-dark text-bg-dark"
+            class="search form-control form-control-dark text-bg-dark"
             placeholder="Search..."
             aria-label="Search"
           />
@@ -58,23 +58,49 @@
         </div>
       </div>
     </header>
-    <main class="main container">
+    <main class="main container mt-5">
       <div
         class="card"
-        style="display: grid; grid-template-columns: repeat(3, 1fr)"
+        style="
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          border: none;
+          gap: 30px;
+        "
       >
         <template id="template">
-          <img class="poster" src="" class="" alt="film img" />
-          <div class="card-body">
-            <h5 class="title card-title">Wednezday</h5>
-            <p class="year card-text">2022</p>
-            <p class="series">series</p>
+          <div class="border rounded-5 p-5 gap-3 mb-1 bg-primary">
+            <img
+              width=" 350"
+              height="456"
+              class="poster"
+              src=""
+              class=""
+              alt="film img"
+            />
+            <div class="card-body">
+              <h5 class="title card-title text-white">Wednezday</h5>
+              <p class="year card-text">2022</p>
+              <p class="series">series</p>
+              <a
+                class="btn btn-primary"
+                style="
+                  text-decoration: none;
+                  color: white;
+                  border: 1px solid #000;
+                  border-radius: 20px;
+                  padding: 15px;
+                "
+                href="http://asilmedia.org/12802-orgimchak-odam-uyga-yol-yoq-uzbek-tilida-2021-marvel-kinolari-ozbekcha-tarjima-kino-hd.html"
+              >
+                Uzbek tilida tomosha qiling 4k
+              </a>
+            </div>
           </div>
         </template>
       </div>
     </main>
-
-    <footer class="py-3 text-bg-dark">
+    <footer class="py-3 text-bg-dark mt-5">
       <ul class="nav justify-content-center border-bottom pb-3 mb-3">
         <li class="nav-item">
           <a href="#" class="nav-link px-2 text-muted">Home</a>
